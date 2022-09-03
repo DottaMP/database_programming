@@ -6,14 +6,13 @@
 
 Download da última versão em https://www.python.org/    
     
-Criar um diretório para para a instação (em um pen drive ou na sua própria máquina).    
+Criar um diretório para a instação (em um pen drive ou na sua própria máquina).    
 Nome do diretório: prog_db    
 ### Em Customize installation:     
 Instalar: documentation, pip, tcl/tk e python test suite.    
 Desmarque: py launcher e for all users.    
 ### Advanced Options:     
-Desmarque todas as opções e clique em browser para selecionar o local de instalação: selecione    
-prog_db e crie uma nova pasta python e instale nesse caminho.    
+Desmarque todas as opções e clique em browser para selecionar o local de instalação: selecione prog_db e crie uma nova pasta python e instale nesse caminho.    
 
 ## **Criando o ambiente virtual:**   
 Prática é deixar a instalação do ambiente python isolada e fazer a instalação do ambiente virtual separada.    
