@@ -1,37 +1,42 @@
 # Programação para Banco de Dados  
 
-## **Preparando o Ambiente:**
+# **Preparando o Ambiente**
 
-### Instalação do python:
+## **Instalação do python**:
 
 Download da última versão em https://www.python.org/    
     
 Criar um diretório para a instação (em um pen drive ou na sua própria máquina).    
 Nome do diretório: prog_db    
-### Em Customize installation:     
+### **Em Customize installation:**     
 Instalar: documentation, pip, tcl/tk e python test suite.    
 Desmarque: py launcher e for all users.    
-### Advanced Options:     
+### **Advanced Options:**     
 Desmarque todas as opções e clique em browser para selecionar o local de instalação: selecione prog_db e crie uma nova pasta python e instale nesse caminho.    
-
-## **Criando o ambiente virtual:**   
+#
+# **Criando o ambiente virtual:**   
 Prática é deixar a instalação do ambiente python isolada e fazer a instalação do ambiente virtual separada.    
 
-### **Parar criar o ambiente na pasta jupyter dentro de prog_db:**    
+### **Para criar o ambiente na pasta jupyter dentro de prog_db:**    
 *python\python.exe -m venv jupyter* (-m = é a forma de chamar o módulo.)    
 *C:\Users\nomeUser\prog_db>python\python.exe -m venv jupyter*    
-
-# **Para ativar o ambiente (jupyter):**
+#
+# **Para ativar o ambiente (jupyter): active.bat**
 *(O que fizer é válido para a instalação mas não para o restante do sistema)*         
 Entrar na pasta *jupyter\Scripts\active.bat*    
 *C:\Users\nomeUser\prog_db\jupyter\Scripts>activate.bat*    
 Para saber se está no ambiente virtual, basta verificar se possuí **(jupyter)**.    
 **(jupyter) C:\Users\nomeUser\prog_db\jupyter\Scripts>**    
 ____________________________________________________________
-## **Instalação do jupyter lab:** *pip install jupyterlab*    
-(entre tantas instalações, uma delas é o pandas completo)    
+## **Instalação do jupyter-lab:** *pip install jupyterlab*        
 *(jupyter) C:\Users\nomeUser\prog_db\jupyter\Scripts>pip install jupyterlab*    
 
+## **Instação do Pandas**  *pip install pandas*
+É uma biblioteca desenvolvida para manipulação e análise de dados com diversas fucionalidades adequadas para o tratamento de tabelas com dados neméricos e séries temporais. O pandas fornece as estruturas para armazenamento de dados e o NumPy as funcções estatísticas necessárias para análise.  
+*(jupyter) C:\Users\nomeUser\prog_db>pip install pandas*
+
+## **Instação do Open Py Xl**  *pip install openpyxl*
+*(jupyter) C:\Users\nomeUser\prog_db>pip install openpyxl*   
 ### **Abrir o jupyter lab:** *jupyter-lab.exe*    
 *(jupyter) C:\Users\nomeUser\prog_db\jupyter\Scripts>jupyter-lab.exe*    
 
@@ -42,8 +47,8 @@ Executar o jupyter lab dentro de arquivos:
 *(jupyter) C:\Users\nomeUser\prog_db\arquivos>jupyter-lab.exe*    
 Irá abrir no browser.    
 Ou use: *(jupyter) C:\Users\nomeUser\prog_db>python jupyter\Lib\site-packages\jupyterlab*  
-
-## **Conceitos básico da linguagem**
+#
+# **Conceitos básico da linguagem**
 Tudo em python é objeto, todas as variáveis são criadas como objetos, ou seja ele muda os tipos conforme o conteúdo.
 ### **Tipos básicos mais comuns de objetos da linguagem são:**
 str -> tipo textual - sequencias de caracteres.
@@ -53,7 +58,8 @@ bytes -> tipos binários.
 ### **Tipos para armazenar mais de um item, são os tipos para sequencias, mapas ou conjuntos de itens:**
 list, tuple, range -> Sequências
 dict -> dicionário ou mapas
-set, frozenset -> conjuntos
+set, frozenset -> conjuntos    
+
 ### **Variáveis - tudo é referência a um objeto**
 As variáveis no python são criadas no momento que atribuímos uma referência à um valor para elas. Não é necessário declará-las no início de nossos programas e não há um comando para isso:
 x = 5
@@ -188,6 +194,8 @@ A cada posição, iniciando a partir do zero, está associando um objeto. Depois
 >>> type(a)
 <class 'tuple'>
 ```
+![Figura Tuplas:](./src/images/tuplas.jpg "Figura Tuplas")
+
 #### **Percorrendo listas**
 Listas usa-se cochetes para abrir e fechar []
 ```
@@ -209,6 +217,19 @@ Exemplo: se alterar o b não vai interferir no valor de a.
 >>>
 ```
 *Se apenas atribuir "a" a "b", o b irá apontar para a, sendo assim se alterar o b vai alterar também o a.*
+![Figura Listas:](./src/images/listas.jpg "Figura Listas")
+
+### **Conjuntos**
+![Figura Conjuntos:](./src/images/conjuntos.jpg "Figura Conjuntos")
+
+### **Dicionários**
+![Figura Dicionários:](./src/images/dicionarios.jpg "Figura Dicionários")
+![Figura Dicionários:](./src/images/dicionarios2.jpg "Figura Dicionários")
+
+### **Manipulação de arquivos**
+![Figura arquivos:](./src/images/arquivos.jpg "Figura arquivos")
+![Figura arquivos:](./src/images/arquivos2.jpg "Figura arquivos")
+
 
 ### **Blocos de código em python: indentação**
 Não faz uso de marcadores de começo e fim de bloco: isso é feito pelo indentação dos blocos.
